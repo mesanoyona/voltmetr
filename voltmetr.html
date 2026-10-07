@@ -1,0 +1,229 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Вольтметр — всё о приборе</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #eaf4ff, #f7fbff);
+        color: #172033;
+        line-height: 1.6;
+    }
+    header {
+        background: #1769aa;
+        color: white;
+        text-align: center;
+        padding: 45px 20px;
+    }
+    header h1 { margin: 0 0 10px; font-size: 42px; }
+    header p { margin: 0; font-size: 19px; }
+    .container {
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+    .card {
+        background: white;
+        border-radius: 18px;
+        padding: 28px;
+        margin-bottom: 24px;
+        box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    }
+    h2 { color: #1769aa; margin-top: 0; }
+    ul { padding-left: 25px; }
+    .highlight {
+        background: #e8f4ff;
+        border-left: 5px solid #1769aa;
+        padding: 15px 18px;
+        border-radius: 8px;
+    }
+    .voltmeter {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+    svg {
+        max-width: 100%;
+        height: auto;
+        filter: drop-shadow(0 8px 12px rgba(0,0,0,.15));
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+    th, td {
+        border: 1px solid #cbd8e5;
+        padding: 12px;
+        text-align: left;
+    }
+    th { background: #1769aa; color: white; }
+    tr:nth-child(even) { background: #f2f7fb; }
+    footer {
+        text-align: center;
+        color: #52606d;
+        padding: 25px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>⚡ Вольтметр</h1>
+    <p>Что это такое, зачем нужен и как им пользоваться</p>
+</header>
+
+<main class="container">
+
+<section class="card">
+    <h2>📌 Что такое вольтметр?</h2>
+    <p>
+        <b>Вольтметр</b> — это электрический измерительный прибор,
+        предназначенный для измерения <b>электрического напряжения</b>
+        между двумя точками электрической цепи.
+    </p>
+    <div class="highlight">
+        Единица измерения напряжения — <b>вольт (В)</b>.
+        Также используются милливольты (мВ) и киловольты (кВ).
+    </div>
+</section>
+
+<section class="card">
+    <h2>🖼️ Как выглядит вольтметр?</h2>
+    <div class="voltmeter">
+        <svg width="650" height="390" viewBox="0 0 650 390"
+             xmlns="http://www.w3.org/2000/svg" role="img"
+             aria-label="Изображение вольтметра">
+            <rect x="105" y="55" width="440" height="280" rx="35"
+                  fill="#dfe6ec" stroke="#273746" stroke-width="8"/>
+            <rect x="145" y="85" width="360" height="190" rx="20"
+                  fill="#f9fbfc" stroke="#667781" stroke-width="5"/>
+            <path d="M190 225 Q325 120 460 225" fill="none"
+                  stroke="#222" stroke-width="6"/>
+            <line x1="325" y1="220" x2="390" y2="155"
+                  stroke="#e53935" stroke-width="7"/>
+            <circle cx="325" cy="220" r="10" fill="#222"/>
+            <text x="325" y="140" text-anchor="middle"
+                  font-size="35" font-weight="bold" fill="#1769aa">V</text>
+            <text x="190" y="250" font-size="18">0</text>
+            <text x="315" y="250" font-size="18">5</text>
+            <text x="445" y="250" font-size="18">10</text>
+            <circle cx="230" cy="310" r="15" fill="#111"/>
+            <circle cx="420" cy="310" r="15" fill="#e53935"/>
+            <text x="230" y="350" text-anchor="middle" font-size="18">COM</text>
+            <text x="420" y="350" text-anchor="middle" font-size="18">V</text>
+            <text x="325" y="45" text-anchor="middle"
+                  font-size="22" font-weight="bold">ВОЛЬТМЕТР</text>
+        </svg>
+    </div>
+</section>
+
+<section class="card">
+    <h2>🎯 Для чего нужен вольтметр?</h2>
+    <p>Вольтметр используют, чтобы:</p>
+    <ul>
+        <li>измерять напряжение в электрических цепях;</li>
+        <li>проверять наличие напряжения;</li>
+        <li>находить неисправности в электрических схемах;</li>
+        <li>контролировать работу аккумуляторов и блоков питания;</li>
+        <li>проверять напряжение в электронных устройствах;</li>
+        <li>проводить лабораторные и учебные измерения.</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>⚙️ Как работает вольтметр?</h2>
+    <p>
+        Вольтметр измеряет <b>разность электрических потенциалов</b>
+        между двумя точками цепи. Современные цифровые вольтметры
+        преобразуют измеренный сигнал в цифровое значение и показывают
+        результат на дисплее.
+    </p>
+    <p>
+        Главное правило: <b>вольтметр подключают параллельно</b>
+        участку цепи, на котором хотят измерить напряжение.
+    </p>
+</section>
+
+<section class="card">
+    <h2>🔌 Где используется вольтметр?</h2>
+    <table>
+        <tr><th>Область</th><th>Пример использования</th></tr>
+        <tr><td>Электротехника</td><td>Проверка напряжения в электрических цепях</td></tr>
+        <tr><td>Автомобили</td><td>Проверка напряжения аккумулятора</td></tr>
+        <tr><td>Электроника</td><td>Диагностика плат и блоков питания</td></tr>
+        <tr><td>Энергетика</td><td>Контроль параметров электрических сетей</td></tr>
+        <tr><td>Образование</td><td>Лабораторные работы по физике</td></tr>
+        <tr><td>Ремонт</td><td>Поиск неисправностей электрических устройств</td></tr>
+    </table>
+</section>
+
+<section class="card">
+    <h2>📏 В каких единицах измеряют напряжение?</h2>
+    <ul>
+        <li><b>1 мВ</b> = 0,001 В</li>
+        <li><b>1 В</b> — один вольт</li>
+        <li><b>1 кВ</b> = 1000 В</li>
+    </ul>
+    <p>
+        Например, обычный бытовой источник питания может иметь напряжение
+        5 В, автомобильный аккумулятор — около 12 В, а электрические сети
+        могут иметь значительно более высокое напряжение.
+    </p>
+</section>
+
+<section class="card">
+    <h2>🛠️ Как правильно подключать вольтметр?</h2>
+    <ol>
+        <li>Выбрать подходящий режим измерения: постоянное или переменное напряжение.</li>
+        <li>Выбрать диапазон, соответствующий ожидаемому напряжению.</li>
+        <li>Чёрный щуп подключить к <b>COM</b>, красный — к входу <b>V</b>.</li>
+        <li>Подключить щупы <b>параллельно</b> измеряемому участку.</li>
+        <li>Считать показание с дисплея или шкалы.</li>
+    </ol>
+    <div class="highlight">
+        ⚠️ <b>Важно:</b> нельзя подключать обычный вольтметр последовательно
+        вместо амперметра. При работе с опасным напряжением необходимо
+        соблюдать правила электробезопасности.
+    </div>
+</section>
+
+<section class="card">
+    <h2>🔄 Виды вольтметров</h2>
+    <ul>
+        <li><b>Аналоговый</b> — показывает значение стрелкой на шкале.</li>
+        <li><b>Цифровой</b> — показывает результат на электронном дисплее.</li>
+        <li><b>Мультиметр</b> — универсальный прибор, который кроме напряжения
+            может измерять ток, сопротивление и другие величины.</li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>📚 Интересный факт</h2>
+    <p>
+        Вольтметр назван в честь итальянского физика <b>Алессандро Вольта</b>,
+        одного из основоположников исследований электричества.
+    </p>
+</section>
+
+<section class="card">
+    <h2>✅ Краткий вывод</h2>
+    <p>
+        Вольтметр — важный электрический измерительный прибор.
+        Он нужен для определения напряжения между двумя точками цепи.
+        Его применяют в электротехнике, электронике, автомобилях,
+        энергетике, ремонте и при изучении физики.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    Проект «Вольтметр» • Учебная страница по физике
+</footer>
+
+</body>
+</html>
